@@ -6,23 +6,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    
+
     <div id="wrap">
-      
+
     <!-- Main canvas for drawing graphs -->
     <canvas id="canvas" height="600" width="1000"></canvas>
 
     <!-- Input for graph -->
-    <input id="graphInput" type="text">
-    
+    <input id="input_0" type="text" oninput="draw()"><img id="plus_0" onclick="newFunction(this.id)" class="plus" src="img/plus.png"><br>
 
-    <!-- Graph button -->
-    <button onclick="draw()"> Draw </button>
-    <br>
-    Quality: <input id="quality" oninput="draw()" type="number" style="width: 80px;" title="Quality">
-    
     </div>
-    
+
     <script src="grapher.js"></script>
 
   </body>
