@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grapher 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <div id="wrap">
+      
+    <!-- Main canvas for drawing graphs -->
+    <canvas id="canvas" height="600" width="1000"></canvas>
+
+    <!-- Input for graph -->
+    <input id="graphInput" type="text">
+    
+
+    <!-- Graph button -->
+    <button onclick="draw()"> Draw </button>
+    <br>
+    Quality: <input id="quality" oninput="draw()" type="number" style="width: 80px;" title="Quality">
+    
+    </div>
+    
+    <script src="grapher.js"></script>
+
+  </body>
+</html>
